@@ -1,0 +1,60 @@
+npm uninstall -g create-react-app
+npm install create-react-app
+
+
+Redux
+	Redux state managment library
+
+There are 4 Main Concept of redux
+1. Action
+2. Action Creator
+3. Reducer
+4. Store
+
+1. Action
+			Action are js objects which contain  "type" Property
+	Ex
+			const a = { type:"LOGIN" } //Action
+			const b = {name1:'anil',name2:'ritkik'} // Not an action
+2. Action Creator
+		Action Creators are function which returns action objects
+
+		x is a action creator
+		let x = ()=>{
+						
+							return { type:"LOGIN" }
+						}
+		
+			y is not an action creator
+		function y(){
+			return {'name1':'Anil'}
+		}
+
+		z is an action creator
+		function z(){
+				
+			return {type:"LOGOUT"}
+		}
+
+
+3. Reducers
+		Reducers are function which takes 2 Argument( previousState,action) and returns newState;
+		
+	
+	Yes b is a reducer function
+	let b = ( previousState,action)=>{
+		
+			
+		return newState;
+	}
+
+	function c(previousState,action){
+		return newState;
+	}
+
+
+4. Store Object
+
+
+
+
